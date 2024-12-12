@@ -1,0 +1,263 @@
+body {
+  background-color: #f5f5f5;
+}
+header ul li {
+  display: inline-block;
+  position: relative;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+header ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 22px;
+  line-height: 20px;
+  font-weight: bold;
+}
+
+header ul li:hover {
+  background-color: wheat;
+}
+
+header ul li:hover > ul {
+  display: block;
+}
+
+header ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: rebeccapurple;
+  padding: 0;
+  z-index: 1;
+
+}
+
+header ul ul li a:hover {
+  background-color: blueviolet;s
+}
+
+html {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+header {
+  height: 100px;
+  background-color: #F2A424;
+  border-top: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+
+footer {
+  background-color: #F2A424;
+  padding: 10px;
+  color: #000000;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 12px;
+
+}
+footer div {
+  display: inline-block;
+  width: 33%;
+}
+
+.left-align {
+  text-align: left;
+}
+
+.right-align {
+  text-align: right;
+}
+
+
+#logo {
+  margin-right: 10px;
+  background-color: #CCCC99;
+  height: 100px;
+  width: 350px; 
+}
+
+#title {
+  font-size: 24px;
+  line-height: 24px;
+  margin-left: 150px;
+  color: #000000;
+  font-weight: bold;
+
+}
+#title:hover {
+  color: white;
+}
+  
+ #grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    padding-bottom: 10px;
+  }
+  .grid-item {
+    position: relative;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  .main-image {
+    width: 500px;
+    height: 340px ;
+    border-radius: 5px;
+    border-right: 3px solid #F3501F;
+    border-left: 3px solid #F3501F;
+    border-top: 3px solid #F3501F;
+    border-bottom: 3px solid #F3501F;
+  }
+  .grid-item h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+    color: #222;
+  }
+
+.char-image {
+  height: 35px;
+  width: 35px;
+  padding-top: 15px;
+  margin-right: 20px;
+}
+
+.image-caption-container {
+  display: inline-block;
+  padding-left: 20px;
+  vertical-align: middle;
+}
+
+.char{
+  font-size: 17px;
+  padding-bottom: 3px;
+  margin-right: 15px;
+  vertical-align: middle;
+}
+.carousel {
+        position: relative;
+        overflow: hidden;
+        height: 300px;
+      }
+      
+      .carousel img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      
+      .carousel button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 30px;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        font-size: 20px;
+      }
+      
+      .carousel .prev {
+        left: 10px;
+      }
+      
+      .carousel .next {
+        right: 10px;
+      }
+h1 {
+  color: #333;
+  text-align: center;
+}
+
+form {
+  margin: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #ffa500;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #ff8c00;
+}
+
+.radio-group {
+  display: flex;
+}
+
+.radio-group label {
+  margin-right: 10px;
+}
+
+
+#fb{
+         width: 50px;
+         height: 50px;
+         border-radius: 3px;
+         margin-top: 10px;
+         margin-left: 10px;
+         margin-right: 30px;
+        }
+        #insta{
+          width: 50px;
+          height: 50px;
+          margin-left: 70px;
+          margin-right: 60px;}
+        #twitter{
+          width: 50px;
+          height: 50px;
+          margin-left: 60px;
+        }
+        #ss{
+          color: black;
+          text-align: center;
+        }
+        .socialicons{
+          text-align: center;
+          padding-bottom: 18px;
+        }

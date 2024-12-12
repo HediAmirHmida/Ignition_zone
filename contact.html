@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="stlc.css">
+  
+</head>
+<body>  <header>
+        <img id="logo" src="images\logo11(1).png" alt="Logo">
+        <ul>
+            <li><a href="prtotype.html">Home</a></li>
+            <li>
+              <a href="#">Cars</a>
+              <ul>
+                <li><a href="bmwcars.html">BMW</a></li>
+                <li><a href="mercedes.html">Mercedes</a></li>
+                <li><a href="peugeot.html">Peugeot</a></li>
+                <li><a href="toyota.html">Toyota</a></li>
+                <li><a href="renault.html">Renault</a></li>
+                <li><a href="suzukicars.html">Suzuki</a></li>
+                <li><a href="fiat.html">Fiat</a></li>
+              </ul>
+            </li>
+            <li>
+                <a href="#">Motorbikes</a>
+                <ul>
+                    <li><a href="KAWASAKI.html">Kawasaki</a></li>
+                    <li><a href="honda.html">Honda</a></li>
+                    <li><a href="suzuki.html">Suzuki</a></li>
+                    <li><a href="yamaha.html">Yamaha</a></li><li>
+                        <li><a href="bmw.html">BMW</a></li>
+                        <li><a href="ktm.html">KTM</a></li>
+                </ul>
+            </li>
+            <li><a href="recherche.php">Search</a></li>
+            <li><a href="contact.html">Contact</a></li>
+		       	<li><a href="survey.html">Survey</a></li>
+          </ul>
+    </header>
+    <form method="POST" action="contact.php">
+      <h2>Customer Information</h2>
+      <h5>(<span class="obligatoire">&#9733;</span>) Mandatory field</h5>
+      <div>
+          <label for="name">Name <span class="obligatoire">&#9733;</span>:</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" >
+      </div>
+      <div>
+          <label for="surname">Surname <span class="obligatoire">&#9733;</span>:</label>
+          <input type="text" id="surname" name="surname" placeholder="Enter your surname" >
+      </div>
+      <div>
+          <label for="email">E-mail <span class="obligatoire">&#9733;</span>:</label>
+          <input type="email" id="email" name="email" placeholder="Enter your e-mail" >
+      </div>
+      <div>
+          <label for="phone">Phone number <span class="obligatoire">&#9733;</span>:</label>
+          <input type="tel" id="phone" name="phone" placeholder=" Enter your phone number ">
+      </div>
+      <div>
+          <label for="vehicle">Vehicle <span class="obligatoire">&#9733;</span>:</label>
+          <select id="vehicle" name="vehicle">
+              <option value="">Select the vehicle type :</option>
+              <option value="car">Car</option>
+              <option value="motorcycle">Motorbike</option>
+          </select>
+      </div>
+      <div>
+          <label for="message">Message <span class="obligatoire">&#9733;</span>:</label>
+          <textarea id="message" name="message" placeholder="Write your message here ..."  cols="65" rows="6"></textarea>
+      </div>
+      <div>
+          <label for="assistance">Get updated by our newsletter :
+          </label>
+      <label>
+    <input type="checkbox" id="yes-checkbox" onclick="toggleYes()"> Yes
+      </label>
+      <label>
+        <input type="checkbox" id="no-checkbox" onclick="toggleNo()"> No
+      </label>
+      <div id="additional-options" style="display:none">
+        <label>
+          <input type="radio" name="options" value="daily"> Daily
+        </label>
+        <label>
+          <input type="radio" name="options" value="weekly"> Weekly
+        </label>
+        <label>
+          <input type="radio" name="options" value="yearly"> Monthly
+        </label>
+      </div>
+      </div>   
+      <input type="submit" name="submit" value="Submit">
+      </form>
+        <footer>
+      <h1 id="ss">Follow Us On Social Media</h1>
+      <div class="socialicons">
+
+
+              <a href="https://www.facebook.com" target="_blank">
+               
+                <img src="images\facebook.png" alt="Facebook.ignition" id="fb">
+                
+                
+              </a>
+
+
+              <a href="https://www.instagram.com/" target="_blank">
+                <img src="images\insta.png" alt="Instagram" id="insta">
+              </a>
+
+
+              <a href="https://www.twitter.com/" target="_blank">
+                <img src="images\twitter.png" alt="Twitter" id="twitter">
+              </a>
+            </div>
+    <section>
+      <div class="left-align">+216 73 458 354</div>
+      <div class="center-align">Ignition Zone Ltd.</div>
+      <div class="right-align">2023</div>
+        </section>
+    </footer>
+<script>
+    function toggleYes() {
+      const yesCheckbox = document.getElementById('yes-checkbox');
+      const noCheckbox = document.getElementById('no-checkbox');
+      yesCheckbox.checked = true;
+      noCheckbox.checked = false;
+      toggleOptions();
+    }
+
+    function toggleNo() {
+      const yesCheckbox = document.getElementById('yes-checkbox');
+      const noCheckbox = document.getElementById('no-checkbox');
+      yesCheckbox.checked = false;
+      noCheckbox.checked = true;
+      toggleOptions();
+    }
+
+    function toggleOptions() {
+      const additionalOptions = document.getElementById('additional-options');
+      const yesCheckbox = document.getElementById('yes-checkbox');
+      additionalOptions.style.display = yesCheckbox.checked ? 'block' : 'none';
+    }
+  </script>
+  
+  
+</body>
+</html>
