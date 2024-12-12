@@ -24,12 +24,12 @@ A full-stack web application built with **HTML**, **CSS**, **JavaScript**, and *
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/your-repository.git
+   git clone https://github.com/HediAmirHmida/Ignition_zone
    ```
 
 2. **Navigate to the Project Directory**:
    ```bash
-   cd your-repository
+   cd Ignition_zone
    ```
 
 3. **Set Up a Local Server**:
@@ -42,7 +42,7 @@ A full-stack web application built with **HTML**, **CSS**, **JavaScript**, and *
 5. **Access the Website**:
    Open your browser and navigate to:
    ```
-   http://localhost/your-repository/
+   http://localhost/Ignition_zone/
    ```
 
 
